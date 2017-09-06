@@ -1,0 +1,39 @@
+{
+  "name": "google-input-tools",
+  "displayName": "Google Input Tools",
+  "description": "Google Input Tools for Code",
+  "version": "0.0.1",
+  "publisher": "varunkumar",
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.googleInputTools",
+    "*"
+  ],
+  "main": "src/extension",
+  "contributes": {
+    "commands": [{
+      "command": "extension.googleInputTools",
+      "title": "Toggle Google Input Tools"
+    }]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.0.26",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.5.0",
+    "typescript": "^2.5.2",
+    "vscode": "^1.1.5"
+  }
+}
