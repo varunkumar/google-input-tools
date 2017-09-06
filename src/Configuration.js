@@ -6,7 +6,7 @@ class Configuration {
   }
 
   static getSuggestionsCount() {
-    return vscode.workspace.getConfiguration().get('google.input.tools.suggestions', 10);
+    return vscode.workspace.getConfiguration().get('google.input.tools.suggestions', 5);
   }
 
   static getErrrorMessage() {

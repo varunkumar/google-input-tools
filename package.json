@@ -4,6 +4,7 @@
   "description": "Google Input Tools for Code",
   "version": "0.0.1",
   "publisher": "varunkumar",
+  "author": "Varunkumar Nagarajan",
   "engines": {
     "vscode": "^1.15.0"
   },
@@ -41,7 +42,7 @@
         },
         "google.input.tools.suggestions": {
           "type": "integer",
-          "default": 10
+          "default": 5
         }
       }
     }
