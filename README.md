@@ -1,65 +1,40 @@
-# Google Input Tools
+# [Google Input Tools](https://github.com/varunkumar/google-input-tools)
 
-This is the README for your extension "google-input-tools". After writing up a brief description, we recommend including the following sections.
+An extension which adds support for Google Input Tools (Transliteration) in VS Code. 
 
-## Features
+```
+ext install google-input-tools
+```
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Usage
 
-For example if there is an image subfolder under your extension project workspace:
+Google Input Tools can be activated through the command 'Toggle Google Input Tools' or using the keybinding (defaults to shift+cmd+i). Once you activate and type any word, it will be transliterated to the chosen language. You can toggle it once you are done typing in your chosen language. Staus bar will indicate if Google input tools is active or not. 
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![IDE](assets/images/demo.gif) 
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No external dependency
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `google.input.tools.language`: [ISO 639-1 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php) of language to transliterate to. For example, 'ta' for Tamil (தமிழ்). List of [supported languages](https://www.google.com/inputtools/help/languages.html).
+* `google.input.tools.suggestions`: Number of suggestions to show for the word. Defaults to 5.
+
+## Keybindings
+
+You can also set custom shortcut in `keybindings.json` via `Code => Preferences => Keyboard Shortcuts`
+For example:
+```
+[
+    { "key": "shift+cmd+i", // set to your favorite shortcut
+      "command": "extension.googleInputTools",
+      "when": "editorTextFocus" }
+]
+```
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+None
