@@ -31,7 +31,20 @@
       "key": "ctrl+shift+i",
       "mac": "cmd+shift+i",
       "when": "editorTextFocus"
-    }]
+    }],
+    "configuration": {
+      "title": "Google Input Tools",
+      "properties": {
+        "google.input.tools.language": {
+          "type": "string",
+          "default": "ta"
+        },
+        "google.input.tools.suggestions": {
+          "type": "integer",
+          "default": 10
+        }
+      }
+    }
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
