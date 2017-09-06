@@ -2,7 +2,7 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan",
   "engines": {
@@ -38,10 +38,12 @@
       "properties": {
         "google.input.tools.language": {
           "type": "string",
+          "description": "ISO 639-1 Code of language to transliterate to.",
           "default": "ta"
         },
         "google.input.tools.suggestions": {
           "type": "integer",
+          "description": "Number of suggestions to show for the word.",
           "default": 5
         }
       }
