@@ -3,8 +3,11 @@ const Configuration = require('./Configuration');
 const fetch = require('node-fetch');
 
 const getSearchText = (lineText, position) => {
-  const temp = lineText.substr(0, position.character).trim().split(' ');
-  return temp[temp.length - 1];
+  const matches = lineText.substr(0, position.character).trim().match(/\w*$/);
+  if (matches) {
+    return matches[0];
+  }
+  return '';
 };
 
 /**
@@ -29,15 +32,18 @@ class InputAutoCompletionProvider {
             }
             const results = response[1][0][1];
             const items = [];
-
+            let i = 0;
             for (const result of results) { // eslint-disable-line no-restricted-syntax
               const item = new vscode.CompletionItem(result);
               item.filterText = searchText;
+              item.sortText = String(i++); // eslint-disable-line no-plusplus
               items.push(item);
             }
 
             // Add the actual typed text to suggestions list
-            items.push(new vscode.CompletionItem(searchText));
+            const item = new vscode.CompletionItem(searchText);
+            item.sortText = String(i);
+            items.push(item);
 
             resolve(items);
           }).catch((err) => {
