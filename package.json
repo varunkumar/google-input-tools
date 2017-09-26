@@ -25,7 +25,8 @@
   "contributes": {
     "commands": [{
       "command": "extension.googleInputTools",
-      "title": "Toggle Google Input Tools"
+      "title": "Toggle Google Input Tools",
+      "icon": "./assets/images/logo.png"
     }],
     "keybindings": [{
       "command": "extension.googleInputTools",
@@ -47,6 +48,13 @@
           "default": 5
         }
       }
+    },
+    "menus": {
+      "touchBar": [{
+        "command": "extension.googleInputTools",
+        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
+        "group": "google-input-tools-group"
+      }]
     }
   },
   "scripts": {
