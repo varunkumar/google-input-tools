@@ -25,7 +25,7 @@ This extension contributes the following settings:
 
 ## TouchBar support
 
-This extension contributes `Toggle Google Input Tools' TouchbBar menu item. You need to have Macbook Pro 2016+ for using this feature.
+This extension contributes `Toggle Google Input Tools` TouchbBar menu item. You need to have Macbook Pro 2016+ for using this feature.
 
 ## Keybindings
 
