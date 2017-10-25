@@ -26,7 +26,7 @@
     "commands": [{
       "command": "extension.googleInputTools",
       "title": "Toggle Google Input Tools",
-      "icon": "./assets/images/logo.png"
+      "icon": "assets/images/logo.png"
     }],
     "keybindings": [{
       "command": "extension.googleInputTools",
@@ -62,16 +62,15 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.42",
-    "@types/node": "^8.0.26",
-    "eslint": "^4.6.1",
-    "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "mocha": "^3.5.0",
-    "typescript": "^2.5.2",
-    "vscode": "^1.1.5"
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.47",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "vscode": "^1.1.6"
   },
   "dependencies": {
-    "node-fetch": "^1.7.2"
+    "node-fetch": "^1.7.3"
   }
 }
