@@ -23,6 +23,10 @@ This extension contributes the following settings:
 * `google.input.tools.language`: [ISO 639-1 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php) of language to transliterate to. For example, 'ta' for Tamil (தமிழ்). List of [supported languages](https://www.google.com/inputtools/help/languages.html).
 * `google.input.tools.suggestions`: Number of suggestions to show for the word. Defaults to 5.
 
+## TouchBar support
+
+This extension contributes `Toggle Google Input Tools' TouchbBar menu item. You need to have Macbook Pro 2016+ for using this feature.
+
 ## Keybindings
 
 You can also set custom shortcut in `keybindings.json` via `Code => Preferences => Keyboard Shortcuts`
