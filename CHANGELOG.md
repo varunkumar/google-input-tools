@@ -3,6 +3,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.5 - 03-May-2018
+### Fixed
+- Fixed security vulnerabilities with dependent libs https://nvd.nist.gov/vuln/detail/CVE-2018-3728
+
 ## v0.0.4 - 25-Oct-2017
 ### Changed
 - Added support for toggling google input tools from Mac OSX TouchBar

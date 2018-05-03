@@ -2,7 +2,7 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan (வருண்குமார் நாகராஜன்)",
   "engines": {
@@ -23,17 +23,21 @@
   },
   "main": "src/extension",
   "contributes": {
-    "commands": [{
-      "command": "extension.googleInputTools",
-      "title": "Toggle Google Input Tools",
-      "icon": "assets/images/logo.png"
-    }],
-    "keybindings": [{
-      "command": "extension.googleInputTools",
-      "key": "ctrl+shift+i",
-      "mac": "cmd+shift+i",
-      "when": "editorTextFocus"
-    }],
+    "commands": [
+      {
+        "command": "extension.googleInputTools",
+        "title": "Toggle Google Input Tools",
+        "icon": "assets/images/logo.png"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.googleInputTools",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i",
+        "when": "editorTextFocus"
+      }
+    ],
     "configuration": {
       "title": "Google Input Tools",
       "properties": {
@@ -50,11 +54,13 @@
       }
     },
     "menus": {
-      "touchBar": [{
-        "command": "extension.googleInputTools",
-        "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
-        "group": "google-input-tools-group"
-      }]
+      "touchBar": [
+        {
+          "command": "extension.googleInputTools",
+          "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly",
+          "group": "google-input-tools-group"
+        }
+      ]
     }
   },
   "scripts": {
@@ -62,15 +68,15 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.47",
-    "eslint": "^4.9.0",
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^9.6.11",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.0.1",
-    "vscode": "^1.1.6"
+    "eslint-plugin-import": "^2.11.0",
+    "mocha": "^5.1.1",
+    "vscode": "^1.1.17"
   },
   "dependencies": {
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^2.1.2"
   }
 }
