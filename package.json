@@ -2,7 +2,7 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan (வருண்குமார் நாகராஜன்)",
   "engines": {
@@ -68,15 +68,15 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.0",
-    "@types/node": "^9.6.11",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "mocha": "^5.1.1",
-    "vscode": "^1.1.17"
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.11.7",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "vscode": "^1.1.21"
   },
   "dependencies": {
-    "node-fetch": "^2.1.2"
+    "node-fetch": "^2.2.0"
   }
 }
