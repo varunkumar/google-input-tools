@@ -4,6 +4,12 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.7 - 12-Dec-2018
+
+### Fixed
+
+- Fixed security vulnerabilities with dependent libs https://github.com/dominictarr/event-stream/issues/116
+
 ## v0.0.6 - 12-Oct-2018
 
 ### Fixed
