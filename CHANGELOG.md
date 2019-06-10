@@ -4,6 +4,12 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.8 - 10-Jun-2019
+
+### Fixed
+
+- Fixed security vulnerabilities with dependent libs https://npmjs.com/advisories/886 https://npmjs.com/advisories/803 https://npmjs.com/advisories/813 https://npmjs.com/advisories/788
+
 ## v0.0.7 - 12-Dec-2018
 
 ### Fixed
