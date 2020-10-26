@@ -6,6 +6,8 @@ An extension which adds support for Google Input Tools (Transliteration) in VS C
 ext install google-input-tools
 ```
 
+[Extension marketplace](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+
 ## Usage
 
 Google Input Tools can be activated through the command 'Toggle Google Input Tools' or using the keybinding (defaults to shift+cmd+i). Once you activate and type any word, it will be transliterated to the chosen language. You can toggle it once you are done typing in your chosen language. Status bar will indicate if Google input tools is active or not.
