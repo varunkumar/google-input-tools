@@ -1,6 +1,6 @@
 const vscode = require('vscode'); // eslint-disable-line
-const Configuration = require('./Configuration');
 const fetch = require('node-fetch');
+const Configuration = require('./Configuration');
 
 const getSearchText = (lineText, position) => {
   const matches = lineText.substr(0, position.character).trim().match(/\w*$/);
@@ -14,7 +14,8 @@ const getSearchText = (lineText, position) => {
  *  Input auto-completion provider
  */
 class InputAutoCompletionProvider {
-  provideCompletionItems(document, position) { // eslint-disable-line
+  // eslint-disable-next-line class-methods-use-this
+  provideCompletionItems(document, position) {
     const lineAt = document.lineAt(position);
     const lineText = document.getText(lineAt.range);
 
@@ -24,19 +25,26 @@ class InputAutoCompletionProvider {
 
     if (searchText !== '') {
       return new Promise((resolve, reject) => {
-        fetch(`https://inputtools.google.com/request?text=${searchText}&itc=${language}-t-i0-und&num=${suggestionsCount}`)
-          .then(res => res.json()).then((response) => {
+        fetch(
+          `https://inputtools.google.com/request?text=${searchText}&itc=${language}-t-i0-und&num=${suggestionsCount}`
+        )
+          // eslint-disable-next-line arrow-parens
+          .then((res) => res.json())
+          .then((response) => {
             if (typeof response[0] === 'string' && response[0] !== 'SUCCESS') {
-              vscode.window.showWarningMessage(Configuration.getErrrorMessage());
+              vscode.window.showWarningMessage(
+                Configuration.getErrrorMessage()
+              );
               reject(new Error(response[0]));
             }
             const results = response[1][0][1];
             const items = [];
             let i = 0;
-            for (const result of results) { // eslint-disable-line no-restricted-syntax
+            for (i = 0; i < results.length; i += 1) {
+              const result = results[i];
               const item = new vscode.CompletionItem(result);
               item.filterText = searchText;
-              item.sortText = String(i++); // eslint-disable-line no-plusplus
+              item.sortText = String(i); // eslint-disable-line no-plusplus
               items.push(item);
             }
 
@@ -46,7 +54,8 @@ class InputAutoCompletionProvider {
             items.push(item);
 
             resolve(items);
-          }).catch((err) => {
+          })
+          .catch((err) => {
             vscode.window.showWarningMessage(Configuration.getErrrorMessage());
             reject(err);
           });
