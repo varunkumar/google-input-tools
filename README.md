@@ -1,5 +1,9 @@
 # [Google Input Tools](https://github.com/varunkumar/google-input-tools)
 
+[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+[![Rating](https://vsmarketplacebadge.apphb.com/rating/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools) [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://varunkumar.mit-license.org/)
+
 An extension which adds support for Google Input Tools (Transliteration) in VS Code.
 
 ```
