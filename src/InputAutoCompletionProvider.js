@@ -1,5 +1,6 @@
 const vscode = require('vscode'); // eslint-disable-line
-const fetch = require('node-fetch');
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args)); // eslint-disable-line
 const Configuration = require('./Configuration');
 
 const getSearchText = (lineText, position) => {
