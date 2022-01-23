@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.14 - 23-Jan-2022
+
+- Improve the startup time by loading the extension `onStartupFinished` event
+
 ## v0.0.13 - 23-Jan-2022
 
 - Fixed security vulnerabilities with dependent libs
