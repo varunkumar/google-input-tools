@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.13 - 23-Jan-2022
+
+- Fixed security vulnerabilities with dependent libs
+
 ## v0.0.12 - 17-Aug-2021
 
 - Fixed security vulnerabilities with dependent libs
