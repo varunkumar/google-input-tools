@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.15 - 24-Jan-2022
+
+- Improve the error reporting on transliteration failure
+
 ## v0.0.14 - 23-Jan-2022
 
 - Improve the startup time by loading the extension `onStartupFinished` event

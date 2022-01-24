@@ -34,8 +34,9 @@ class InputAutoCompletionProvider {
           .then((response) => {
             if (typeof response[0] === 'string' && response[0] !== 'SUCCESS') {
               vscode.window.showWarningMessage(
-                Configuration.getErrrorMessage()
+                Configuration.getErrrorMessage() + '.' + response[0]
               );
+              console.log(response);
               reject(new Error(response[0]));
             }
             const results = response[1][0][1];
