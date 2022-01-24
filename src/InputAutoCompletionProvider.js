@@ -34,7 +34,7 @@ class InputAutoCompletionProvider {
           .then((response) => {
             if (typeof response[0] === 'string' && response[0] !== 'SUCCESS') {
               vscode.window.showWarningMessage(
-                Configuration.getErrrorMessage() + '.' + response[0]
+                Configuration.getErrrorMessage() + response[0]
               );
               console.log(response);
               reject(new Error(response[0]));
@@ -58,7 +58,9 @@ class InputAutoCompletionProvider {
             resolve(items);
           })
           .catch((err) => {
-            vscode.window.showWarningMessage(Configuration.getErrrorMessage());
+            vscode.window.showWarningMessage(
+              Configuration.getErrrorMessage() + err
+            );
             reject(err);
           });
       });

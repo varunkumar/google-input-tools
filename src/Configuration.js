@@ -14,7 +14,7 @@ class Configuration {
   }
 
   static getErrrorMessage() {
-    return 'Unable to transliterate your text';
+    return 'Unable to transliterate your text.';
   }
 }
 
