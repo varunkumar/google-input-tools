@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.18 - 06-Feb-2022
+
+- Fix for auto-suggestion failures
+
 ## v0.0.17 - 06-Feb-2022
 
 - Fix for auto-suggestion failures
