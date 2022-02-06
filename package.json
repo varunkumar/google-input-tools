@@ -2,15 +2,16 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan (வருண்குமார் நாகராஜன்)",
   "engines": {
     "vscode": "^1.64.0"
   },
   "categories": [
-    "Languages",
-    "Other"
+    "Formatters",
+    "Other",
+    "Language Packs"
   ],
   "activationEvents": [
     "onCommand:extension.googleInputTools",
@@ -72,7 +73,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "mocha": "~9.2.0",
-    "nanoid": "~3.2.0",
+    "nanoid": "~3.2.0"
+  },
+  "dependencies": {
     "node-fetch": "^2.6.7"
   }
 }
