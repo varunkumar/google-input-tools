@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.20 - 11-Jun-2022
+
+- Open up the extension for sponsors.
+
 ## v0.0.19 - 26-Apr-2022
 
 - Fixed security vulnerabilities with dependent libs

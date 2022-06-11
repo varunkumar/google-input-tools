@@ -2,11 +2,14 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan (வருண்குமார் நாகராஜன்)",
   "engines": {
     "vscode": "^1.64.0"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/varunkumar"
   },
   "categories": [
     "Formatters",
