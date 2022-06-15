@@ -12,6 +12,12 @@ ext install google-input-tools
 
 [Extension marketplace](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
 
+[Open VSX](https://open-vsx.org/extension/varunkumar/google-input-tools)
+
+[![Marketplace Version](https://img.shields.io/open-vsx/v/varunkumar/google-input-tools)](https://open-vsx.org/extension/varunkumar/google-input-tools)
+[![Installs](https://img.shields.io/open-vsx/dt/varunkumar/google-input-tools)](https://open-vsx.org/extension/varunkumar/google-input-tools)
+[![Rating](https://img.shields.io/open-vsx/rating/varunkumar/google-input-tools)](https://open-vsx.org/extension/varunkumar/google-input-tools) [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://varunkumar.mit-license.org/)
+
 ## Usage
 
 Google Input Tools can be activated through the command 'Toggle Google Input Tools' or using the keybinding (defaults to shift+cmd+i). Once you activate and type any word, it will be transliterated to the chosen language. You can toggle it once you are done typing in your chosen language. Status bar will indicate if Google input tools is active or not.
