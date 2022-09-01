@@ -35,7 +35,6 @@ class InputAutoCompletionProvider {
               vscode.window.showWarningMessage(
                 Configuration.getErrrorMessage() + response[0]
               );
-              console.log(response);
               reject(new Error(response[0]));
             }
             const results = response[1][0][1];
