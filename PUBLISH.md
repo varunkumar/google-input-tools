@@ -7,6 +7,7 @@
 - Test the changes by deleting node_modules and do a fresh install
 - `vsce login varunkumar`
 - Generate new Personal Access Token from https://varunkumarn.visualstudio.com/ > Profile > Security
+  (Organizations: All accessible organizations, Scopes: Marketplace-Manage)
 - `vsce publish` to publish the package
 
 ## Steps to publish to open-vsx
