@@ -2,7 +2,7 @@
   "name": "google-input-tools",
   "displayName": "Google Input Tools",
   "description": "Google Input Tools for Code",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "publisher": "varunkumar",
   "author": "Varunkumar Nagarajan (வருண்குமார் நாகராஜன்)",
   "engines": {
@@ -26,6 +26,7 @@
     "url": "https://github.com/varunkumar/google-input-tools"
   },
   "main": "src/extension",
+  "browser": "src/extension",
   "contributes": {
     "commands": [
       {
