@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.22 - 17-Nov-2022
+
+- Fixed security vulnerabilities with dependent libs
+
 ## v0.0.21 - 01-Sep-2022
 
 - Add support for VS Code web
