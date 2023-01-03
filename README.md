@@ -1,8 +1,9 @@
 # [Google Input Tools](https://github.com/varunkumar/google-input-tools)
 
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating/varunkumar.google-input-tools.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools) [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://varunkumar.mit-license.org/)
+[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/varunkumar.google-input-tools)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/varunkumar.google-input-tools)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/varunkumar.google-input-tools)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/varunkumar.google-input-tools)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools)[![Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/varunkumar.google-input-tools)](https://marketplace.visualstudio.com/items?itemName=varunkumar.google-input-tools) [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](https://varunkumar.mit-license.org/)
 
 An extension which adds support for Google Input Tools (Transliteration) in VS Code.
 
