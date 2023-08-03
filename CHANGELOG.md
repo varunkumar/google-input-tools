@@ -4,6 +4,10 @@ All notable changes to the "google-input-tools" extension will be documented in 
 
 ## [Unreleased]
 
+## v0.0.25 - 03-Aug-2023
+
+- Fix security vulnerabilities with dependent libs
+
 ## v0.0.24 - 03-Jan-2023
 
 - Fix badges in README
